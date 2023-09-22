@@ -1,0 +1,263 @@
+#share {
+    display: flex;
+    padding: 60px 120px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    background: #FBFDFF;
+}
+
+#share .share {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+}
+
+#share .share-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+    align-self: stretch;
+ }
+
+#share .share-box p {
+    color: #000;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+ }
+
+#share .share-box .links {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+ }
+
+/*------POST-----*/
+#post-a {
+    display: flex;
+    padding: 60px 120px;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+
+#post-b {
+    padding: 60px 120px;
+    gap: 10px;
+    align-self: stretch;
+}
+
+#post-a .img {
+    height: 600px;
+}
+
+#post-a .img img {
+    width: 100%;
+}
+
+
+/*-------EXCO-------*/
+#exco-a {
+    display: flex;
+    padding: 60px 120px;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    background: #FBFDFF;
+}
+
+#exco-a .img {
+    height: 600px;
+}
+
+#exco-a .img img {
+    width: 100%;
+    align-self: stretch;
+    border-radius: 10px;
+    background: lightgray 50% / cover no-repeat;
+}
+
+#exco-b {
+    padding: 60px 120px;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    background: #FBFDFF;
+}
+
+#exco-b p {
+    margin-bottom: 85px;
+}
+
+#exco-b b {
+    font-weight: 700;
+}
+
+
+/*------EXECUTIVES------*/
+#exe {
+    display: flex;
+    padding: 60px 120px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 60px;
+    align-self: stretch;
+}
+
+#exe .staffs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+}
+
+#exe .staffs .flex {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 20px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+#exe .staffs .flex .flex-container {
+    display: flex;
+    width: 285px;
+    min-width: 280px;
+    padding-bottom: 0px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 10px;
+    background: #EDF5FF;
+}
+
+#exe .staffs .flex .flex-container .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+    flex: 1 0 0;
+}
+
+#exe .staffs .flex .flex-container .content .img {
+    display: flex;
+    width: 286px;
+    height: 286px;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fff;
+}
+
+#exe .staffs .flex .flex-container .content .img img {
+    background:lightgray -9.76px -3.753px / 106.825% 101.312% no-repeat;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+#exe .students {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+}
+
+#exe .students .flex {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 20px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+#exe .students .flex .flex-container {
+    display: flex;
+    width: 285px;
+    min-width: 280px;
+    padding-bottom: 0px;
+    align-items: flex-start;
+    gap: 10px;
+    background: #EDF5FF;
+}
+
+#exe .students .flex .flex-container .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+    flex: 1 0 0;
+}
+
+#exe .staffs .flex .flex-container .content .img {
+    display: flex;
+    width: 286px;
+    height: 286px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10%;
+    background-color: #fff;
+}
+
+#exe .staffs .flex .flex-container .content .img img {
+    background:lightgray -9.76px -3.753px / 106.825% 101.312% no-repeat;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+#exe .context {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+    align-self: stretch;
+}
+
+
+#exe .context h4 {
+    text-align: center;
+    align-self: stretch;
+    line-height: normal;
+}
+
+#exe .context p{
+    text-align: center;
+    line-height: normal;
+    align-self: stretch;
+}
+
+
+/*------CONSTITUTION----------*/
+
+#con {
+    display: flex;
+    padding: 60px 120px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+
+#con .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+}
+
+#con p {
+    margin-bottom: 38px;
+}
+
+#con b {
+    font-weight: 700;
+}
