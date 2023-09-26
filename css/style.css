@@ -61,6 +61,7 @@
     line-height: 1.6;
   }
 
+
   body .header {
     width: 100%;
     display: flex;
@@ -116,7 +117,11 @@ body .header .download{
         width: 48px;
         height: 44.498px;
         flex-shrink: 0;
-        background: url(../img/icon2.png), #fff 50% / cover no-repeat;
+        background: #fff 50% / cover no-repeat;
+    }
+    #main-nav .navbar-content .icon img {
+        width: 100%;
+        height: 100%;
     }
     
     #main-nav .navbar-content h1 {
@@ -130,14 +135,6 @@ body .header .download{
         flex-shrink: 0;
         margin-top: 5px;
     }   
-    
-    #main-nav .navbar-content .vector {
-        width: 0px;
-        height: 48px;
-        flex-shrink: 0;  
-        stroke-width: 1px;
-        stroke: #000; 
-    }
     
     #main-nav .navbar-content p {
         color: #000;
@@ -383,6 +380,7 @@ font-weight: 400;
 line-height: 24px; 
 }
 
+/*-----------------------------------------------------------------------------------------------------------------------------------------------/
 
 /*------HOME B------*/
 #home-b {
@@ -419,29 +417,38 @@ gap: 20px;
     width: 80px;
 height: 80px;
 flex-shrink: 0;
-background: url(../img/read\ 1.png), var(--primary-color) 50% / cover no-repeat;
+background: var(--primary-color) 50% / cover no-repeat;
 }
 
 #home-b .home-b-flex .content .svg2 {
     width: 80px;
 height: 80px;
 flex-shrink: 0;
-background: url(../img/conference\ 1.png), var(--primary-color) 50% / cover no-repeat;
+background:  var(--primary-color) 50% / cover no-repeat;
 }
 
 #home-b .home-b-flex .content .svg3 {
     width: 80px;
 height: 80px;
 flex-shrink: 0;
-background: url(../img/homework\ 1.png), var(--primary-color) 50% / cover no-repeat;
+background: var(--primary-color) 50% / cover no-repeat;
 }
 
 #home-b .home-b-flex .content .svg4 {
     width: 80px;
 height: 80px;
 flex-shrink: 0;
-background: url(../img/graduated\ 1.png), var(--primary-color) 50% / cover no-repeat;
+background:  var(--primary-color) 50% / cover no-repeat;
 }
+#home-b .home-b-flex .content .svg1 img,
+#home-b .home-b-flex .content .svg2 img,
+#home-b .home-b-flex .content .svg3 img,
+#home-b .home-b-flex .content .svg4 img
+{
+    width: 100%;
+    height: 100%;
+}
+
 
 #home-b .home-b-flex .content .context {
     display: flex;
@@ -511,7 +518,7 @@ flex-wrap: wrap;
 #home-c .frame .exe-grid .content {
     display: flex;
 width: 386px;
-min-width: 360px;
+min-width: 270px;
 padding-bottom: 60px;
 align-items: flex-start;
 gap: 10px;
@@ -536,22 +543,10 @@ align-items: flex-start;
 background: #fff;
 }
 
-#home-c .frame .exe-grid .content .div .imgdiv .img1 {
+#home-c .frame .exe-grid .content .div .imgdiv img {
     flex: 1 0 0;
 align-self: stretch;
-background: url(../img/Screenshot_20230810-233911\ 1.png), lightgray -13.172px -5.066px / 106.825% 101.312% no-repeat;
-}
-
-#home-c .frame .exe-grid .content .div .imgdiv .img2 {
-    flex: 1 0 0;
-align-self: stretch;
-background: url(../img/Dr_shittu\ 1.png), lightgray -13.172px -5.066px / 106.825% 101.312% no-repeat;
-}
-
-#home-c .frame .exe-grid .content .div .imgdiv .img3 {
-    flex: 1 0 0;
-align-self: stretch;
-background: url(../img/_LAY2612\ 3.png), lightgray -13.172px -5.066px / 106.825% 101.312% no-repeat;
+background:lightgray -13.172px -5.066px / 106.825% 101.312% no-repeat;
 }
 
 #home-c .frame .exe-grid .content .div .context{
@@ -595,7 +590,7 @@ border-radius: 10px 0px;
 background: #03045E;
 }
 
-#home-c .frame .see-more .svg{
+#home-c .frame .see-more .svg {
     width: 30px;
 stroke-width: 3px;
 stroke: #FFF;
@@ -622,7 +617,7 @@ gap: 40px;
 align-self: stretch;
 }
 
-#home-d .wse h3 {
+#home-d .wse h2 {
     color: #000;
 text-align: center;
 font-family: Lato;
@@ -683,13 +678,14 @@ gap: 10px;
 align-self: stretch;
 }
 
-#home-d .wse .wse-grid .wse-grid-flex .wse-grid-container .wse-grid-content .text h4 {
-    display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center;
-gap: 10px;
-align-self: stretch;
+#home-d .wse .wse-grid .wse-grid-flex .wse-grid-container .wse-grid-content .text h3 {
+    color: #000;
+    text-align: center;
+    font-family: Lato;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 123.077% */
 }
 
 #home-d .wse .wse-grid .wse-grid-flex .wse-grid-container .wse-grid-content .text p {
@@ -718,7 +714,6 @@ background: var(--light-color);
     display: flex;
 flex-direction: column;
 align-items: center;
-gap: 45px;
 align-self: stretch;
 }
 
@@ -731,7 +726,7 @@ align-self: stretch;
 height: 70%;
 }
 
-#home-e .content .context h3 {
+#home-e .content .context h2 {
     color: #000;
 text-align: center;
 font-family: Lato;
@@ -742,7 +737,6 @@ line-height: normal;
 }
 
 #home-e .content .context p {
-    height: 64px;
 align-self: stretch;
 color: #4A4A4A;
 text-align: center;
@@ -787,7 +781,7 @@ gap: 42px;
 align-self: stretch;
 }
 
-#home-f .u-e h3 {
+#home-f .u-e h2 {
     color: #000;
 text-align: center;
 font-family: Lato;
@@ -810,7 +804,7 @@ flex-wrap: wrap;
 
 #home-f .u-e .u-e-grid .img {
     border-radius: 10px;
-background: url(../img/discourse_design.png), lightgray 0px -108.994px / 100% 162% no-repeat;
+background:lightgray;
 width: 450px;
 height: 337.5px;
 }
@@ -834,7 +828,7 @@ gap: 16px;
 align-self: stretch;
 }
 
-#home-f .u-e .u-e-grid .content .context h4 {
+#home-f .u-e .u-e-grid .content .context h3 {
     color: #000;
     font-family: Lato;
     font-size: 32px;
@@ -890,7 +884,7 @@ background: #03045E;
     align-self: stretch;
 }
 
-#home-g .orp h3 {
+#home-g .orp h2 {
     color: #000;
     text-align: center;
     font-family: Lato;
@@ -937,13 +931,14 @@ background: #03045E;
     align-self: stretch;
 }
 
-#home-g .orp .orp-post .post .context h4 {
+#home-g .orp .orp-post .post .context h3 {
     color: #000;
     font-family: Lato;
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
     line-height: 40px; /* 125% */
+    margin-bottom: 5px;
 }
 
 #home-g .orp .orp-post .post .context a {
@@ -953,9 +948,6 @@ background: #03045E;
     gap: 5px;
     border-radius: 10px 0px;
     border: 1px solid #03045E;
-}
-
-#home-g .orp .orp-post .post .context a div {
     color: #03045E;
     font-family: Lato;
     font-size: 20px;
@@ -964,6 +956,18 @@ background: #03045E;
     line-height: 32px; /* 160% */
 }
 
+#home-g .orp .orp-post .post .context a p {
+    color: #03045E;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 160% */
+}
+
+#home-g .orp .orp-post .post .context h3 span {
+    display: none;
+}
 
 #home-g .orp .more {
     display: flex;
@@ -1089,8 +1093,6 @@ background: #03045E;
 }
 
 #eve-blog .eve-blog-a .container .img {
-    width: 562px;
-    height: 421.5px;
     border-radius: 10px;
     background: lightgray 0px -136.121px / 100% 162% no-repeat;
 }
@@ -1170,8 +1172,7 @@ background: #03045E;
 #eve-blog .eve-blog-b .container .content .img {
     border-radius: 10px 10px 0px 0px;
     background:lightgray 0px -56.389px / 100% 133.704% no-repeat;
-    width: 386.667px;
-    height: 290px;
+    overflow: hidden;
 }
 
 #eve-blog .eve-blog-b .container .content .context {

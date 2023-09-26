@@ -9,7 +9,7 @@
 
   
   body .header {
-    padding: 150px 20px 30px 20px;
+    padding: 110px 20px 30px 20px;
   }
   body .header h1 {
   font-size: 20px;
@@ -68,6 +68,22 @@
 
 @media (max-width: 768px)
 {
+  /*--------RESOURCES------*/
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .sub-title, h3 {
+    font-size: 16px;
+  }
+  .body-text, h4 {
+    font-size: 14px;
+  }
+  .link-text {
+    font-size: 12px;
+  }
   /*-----HEADER------*/
   #header {
     padding: 180px 22px;
@@ -77,14 +93,36 @@
  /* Navigation */
   .menu-wrap {
     position: absolute;
-    top: 35px;
+    top: 30%;
     right: 20px;
     z-index: 2 !important;
   }
 
   #main-nav {
-    padding: 14px 20px;
+    padding: 2px 20px;
+    width: 100vw;
   }
+  #main-nav .navbar-content .icon {
+    width: 32px;
+    height: 29.498px;
+    background: #fff 50% / cover no-repeat;
+    margin-bottom: 12px;
+}
+#main-nav .navbar-content h1 {
+  font-size: 13px;
+  line-height: 16px;
+  width: 130px;
+}
+#main-nav .navbar-content p {
+  font-size: 14px;
+  line-height: 16px;
+  width: 67px;
+}
+
+#main-nav .navbar-content svg {
+  width: 2px;
+  height: 30px;
+}
  
 #main-nav ul li a {
   padding: 0.7rem;
@@ -233,22 +271,248 @@
     text-decoration: none;
   }
 
+/*----------------------------------------------------------------------------------------------------------------------------*/
+
+
+     /*---------HOME A--------*/
+  #home-a .mvogrid .mvo .mvocontent .text p {
+      font-size: 14px;
+  }
+  #home-a .mvogrid .mvo .mvocontent .text h4 {
+    font-size: 23px;
+  }
+  #home-a .mvogrid .mvo {
+    padding: 20px;
+  }
+
+
+  /*---------HOME B--------*/
+  #home-b {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    height: 70vh;
+  }
+
+  #home-b .home-b-flex .content {
+    display: flex;
+    width: 164px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+   }
+  #home-b .home-b-flex .content .svg1,
+  #home-b .home-b-flex .content .svg2,
+  #home-b .home-b-flex .content .svg3,
+  #home-b .home-b-flex .content .svg4 {
+    width: 48px;
+    height: 48px;
+  }
+  #home-b .home-b-flex .content .context h3{
+    font-size: 28px;
+    margin-bottom: 0;
+  }
+  #home-b .home-b-flex .content .context p {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+  
+  /*---------HOME C--------*/
+  #home-c {
+    padding: 48px 0px;
+  }
+  #home-c .frame {
+    gap: 24px;
+  }
+  #home-c .frame h3 {
+    font-size: 20px;
+    height: 29px;
+  }
+  #home-c .frame .exe-grid  {
+    padding: 0px 20px;
+  }
+  #home-c .frame .exe-grid .content {
+    width: 300px;
+  }
+  #home-c .frame .exe-grid .content .div .imgdiv {
+    width: 300px;
+    height: 300px;
+  }
+  #home-c .frame .exe-grid .content .div .context h4 {
+    font-size: 20px;
+  }
+  #home-c .frame .exe-grid .content .div .context p {
+    font-size: 16px;
+  }
+  #home-c .frame .see-more {
+    padding: 20px 14px;
+    width: 44px;
+    height: 40px;
+    margin-top: 0px;
+  }
+  #home-c .frame .see-more .svg {
+    width: 16px;
+  }
+
+
+/*---------HOME D--------*/
+  #home-d {
+    padding: 48px 20px;
+  }
+  #home-d .wse h2 {
+    font-size: 20px;
+  }
+  #home-d .wse .wse-grid .wse-grid-flex .wse-grid-container {
+    padding: 20px;
+    gap: 10px;
+  }
+  #home-d .wse .wse-grid .wse-grid-flex .wse-grid-container .wse-grid-content {
+    gap: 5px;
+  }
+  #home-d .wse .wse-grid .wse-grid-flex .wse-grid-container .wse-grid-content .svg {
+    width: 40px;
+    height: 40px;
+    margin: 0
+  }
+
+  #home-d .wse .wse-grid .wse-grid-flex .wse-grid-container .wse-grid-content .text h3 {
+    font-size: 16px;
+    margin: 0;
+  }
+  #home-d .wse .wse-grid .wse-grid-flex .wse-grid-container .wse-grid-content .text .body-text {
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0;
+  }
+
    /*---------HOME E--------*/
    #home-e {
     display: flex;
-  padding: 48px 20px;
+    padding: 48px 20px;
   }
-  #home-e .content  {
-    gap: 24px;
+
+  #home-e .content {
+    gap: 5px; 
   }
   #home-e .content .context {
-    gap: 8px;
+    gap: 2px;
+    padding-bottom: 0;
   }
+  #home-e .content .context h2 {
+    font-size: 20px;
+  }
+  #home-e .content .context .body-text {
+    font-size: 14px;
+    margin-bottom: 2px;
+   }
+  #home-e .content .view {
+     padding: 18px 40px;
+     margin-top: 0px;
+     height: 47px;
+     font-size: 12px;
+   }
+
+
   /*------HOME F-----*/
   #home-f {
-    padding: 48px 30px;
+    padding: 48px 20px;
    }
-   
+   #home-f .u-e {
+    gap: 24px;
+   }
+   #home-f .u-e h2 {
+    font-size: 20px;
+   }
+   #home-f .u-e .u-e-grid {
+    gap: 21px;
+   }
+   #home-f .u-e .u-e-grid .img {
+    width: 300px;
+    height: 225px;
+    margin-bottom: 0;
+   }
+   #home-f .u-e .u-e-grid .img img {
+    width: 100%;
+    height: 100%;
+   }
+   #home-f .u-e .u-e-grid .content {
+    gap: 10px;
+    width: 300px;
+    align-items: center;
+   }
+   #home-f .u-e .u-e-grid .content .context {
+    align-items: center;
+    gap: 8px;
+   }
+   #home-f .u-e .u-e-grid .content .context h3 {
+    font-size: 16px;
+    margin-top: 0;
+   }
+   #home-f .u-e .see-more {
+    padding: 20px 14px;
+    width: 44px;
+    height: 40px;
+   }
+   #home-f .u-e .see-more .svg {
+    width: 16px;
+   }
+
+
+    /*------------HOME G--------*/
+    #home-g {
+      padding: 32px 20px;
+      gap: 10px;
+    }
+    #home-g .orp {
+      gap: 20px;
+    }
+    #home-g .orp h2 {
+      font-size: 24px;
+    }
+    #home-g .orp .orp-post .post {
+      width: 300px;
+      gap: 20px;
+      padding-bottom: 0px;
+      margin-top: 0px;
+    }
+    #home-g .orp .orp-post .post img {
+      width: 100%;
+      height: 225px;
+    }
+    #home-g .orp .orp-post .post .context h3 span {
+      display:contents;
+    }
+    #home-g .orp .orp-post .post .context h3 {
+      font-size: 20px;
+      line-height: normal;
+    }
+    #home-g .orp .orp-post .post .context a {
+      padding: 10px 20px;
+      width: 110px;
+      height: 37px;
+      align-items: center;
+      gap: 4px;
+      font-size: 14px;
+      line-height: normal;
+      align-items: center;
+      margin: 15px 0px;
+
+    }
+    #home-g .orp .orp-post .post .context a p {
+      font-size: 14px;
+      line-height: normal;
+      align-items: center;
+    }
+    #home-g .orp .more {
+      padding: 20px 14px;
+      width: 44px;
+      height: 40px;
+    }
+    #home-g .orp .more .svg {
+      width: 16px;
+    }
 }
 
 @media (max-width: 600px)
@@ -313,13 +577,8 @@
   #home-d .wse .wse-grid .wse-grid-flex .wse-grid-container .wse-grid-content {
     gap: 8px;
   }
-  #home-d .wse .wse-grid .wse-grid-flex .wse-grid-container .wse-grid-content .text h4 {
-    font-size: 28px;
-  }
-  #home-d .wse .wse-grid .wse-grid-flex .wse-grid-container .wse-grid-content .text p {
-    font-size: 20px;
-    line-height: 23px;
-  }
+
+
   /*---------HOME E--------*/
   #home-e {
     display: flex;
@@ -434,7 +693,7 @@
     font-size: 16px;
   }
 
-  /*----CONTACT------*/
+  /*-------------CONTACT---------------*/
   #contact {
     padding: 30px 20px;
   }
@@ -456,7 +715,7 @@
     padding: 20px;
   }
 
-  /*-----EXCO-----*/
+  /*-------------EXCO---------------*/
   #exco-a {
     padding: 20px;
   }
@@ -510,14 +769,23 @@
    
 }
 
-
+@media (max-width: 450px) {
+  /*-----HEADER CLASS-----*/
+  .header {
+    width: 100vw;
+  }
+  /*-----------EVE-BLOG-----------*/
+  #eve-blog {
+    padding: 30px 20px;
+  }
+}
 @media (max-height: 500px)
 {
   /*-----HEADER------*/
   #header {
     padding: 180px 22px;
   }
-  
+
   /*-----FOOTER-----*/
   #footer .footer-grid .footer-grid3 form .form input[type=text],
   #footer .footer-grid .footer-grid3 form .form textarea {
@@ -525,8 +793,13 @@
 }
 }
 
+@media screen {
+  
+}
+
 @media (max-height: 320px)
 {
+  
     /*-----HEADER------*/
     #header {
       padding: 180px 22px;
