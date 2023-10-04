@@ -6,6 +6,7 @@
   .hide {
     display: none;
   }
+  
 
   
   body .header {
@@ -69,6 +70,12 @@
 @media (max-width: 768px)
 {
   /*--------RESOURCES------*/
+  .menu-wrap .menu > div > div > ul > li .collapse {
+    display:inline;
+    display: block;
+    display: inline-block;
+  }
+ 
   h1 {
     font-size: 32px;
   }
@@ -84,6 +91,17 @@
   .link-text {
     font-size: 12px;
   }
+
+  /*-----EXTERNAL RESOURCES------*/
+  #share .share-box p {
+    font-size: 14px;
+    line-height: 0%;
+  }
+  #share .share .share-box .links a svg {
+    width: 24px;
+    height: 24px;
+  }
+
   /*-----HEADER------*/
   #header {
     padding: 180px 22px;
@@ -95,12 +113,13 @@
     position: absolute;
     top: 30%;
     right: 20px;
-    z-index: 2 !important;
+    z-index: -1 !important;
   }
 
   #main-nav {
     padding: 2px 20px;
     width: 100vw;
+    z-index: 2 !important;
   }
   #main-nav .navbar-content .icon {
     width: 32px;
@@ -226,7 +245,6 @@
     top: 0;
     right: 0;
     width: 100%;
-    height: 100%;
     visibility: hidden;
     overflow: hidden;
     display: flex;
@@ -241,34 +259,60 @@
     justify-content: center;
   }
 
+  #main-nav ul li svg {
+    display: block;
+  }
+
   .menu-wrap .menu > div {
     background: #FBFDFF;
-    border-radius: 50%;
     width: 100vw;
-    height: 300vh;
+    height: 100vh;
     display: flex;
-    flex: none;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
     transform: scale(0);
     transition: all 0.4s ease;
   }
 
   .menu-wrap .menu > div > div {
-    text-align: center;
+    text-align:center;
     max-width: 90vw;
     max-height: 100vh;
+    width: 100vw;
     opacity: 0;
     transition: opacity 0.4s ease;
+    margin-top: 4rem;
   }
-
+  .menu-wrap .menu > div > div > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-self: stretch;
+    width: 100vw;
+  }
   .menu-wrap .menu > div > div > ul > li {
     font-size: 2.2rem;
-    padding: 1.2rem;
+    display: flex;
+    padding: 20px 0px;
+    align-self: stretch;
   }
 
   .menu-wrap .menu > div > div > ul > li a {
+    display: flex;
+    justify-content: space-between;
     text-decoration: none;
+    width: 100%;
+  }
+  .menu-wrap .menu > div > div > ul > li > span {
+    width: 94.5%;
+  }
+  .menu-wrap .menu > div > div > ul > li > span a {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    width: 100%;
   }
 
 /*----------------------------------------------------------------------------------------------------------------------------*/
@@ -513,6 +557,261 @@
     #home-g .orp .more .svg {
       width: 16px;
     }
+
+  /*-------------------ABOUT-------------------------------------------------------------------*/
+  #about .about-container .paragraph {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  #about .about-container .content ul li {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  #about .about-container .hide {
+    display: none;
+  }
+  #about .about-container .collapse {
+      display: block;
+  }
+    /*-----------------------EVE-BLOG---------------------------------------------*/
+  #eve-blog {
+    padding: 30px 20px;
+    width: 90vw;
+  }
+  #eve-blog .eve-blog-a h2 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  #eve-blog .eve-blog-a .container {
+    padding: 0px;
+  }
+  #eve-blog .eve-blog-a .container .img-container {
+    width: 85vw;
+    margin-bottom: -10px;
+  }
+  #eve-blog .eve-blog-a .container .content {
+    width: 85vw;
+  }
+  #eve-blog .eve-blog-a .container .content a {
+    width: 111px;
+    height: 37px;
+    padding: 10px;
+    align-items: center;
+    gap: 2px;
+    font-size: 14px;
+    margin-top: 0px;
+  }
+  #eve-blog .eve-blog-a .container .content .context {
+    width: 85vw;
+    gap: 0.3px;
+  }
+  #eve-blog .eve-blog-a .container .content .context h3 {
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+
+  #eve-blog .eve-blog-a .container .content .context p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  #eve-blog .eve-blog-a .container .content .context svg {
+    width: 48px;
+    height: 48px;
+    margin: 15px 0px;
+}
+  #eve-blog .eve-blog-b h2 {
+    font-size: 20px;
+  }
+  #eve-blog .eve-blog-b .container .content .context h3 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+  #eve-blog .eve-blog-b .container .content .context p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0px;
+  }
+  #eve-blog .eve-blog-b .container .content .context svg {
+    width: 48px;
+    height: 48px;
+    margin: 15px 0px;
+}
+  #eve-blog .eve-blog-b .container {
+    padding: 0px;
+  }
+  #eve-blog .eve-blog-b .container .content {
+    width: 45vw;
+  }
+  #eve-blog .eve-blog-b .container .content .img {
+    width: 100%;
+  }
+  #eve-blog .eve-blog-b .container .content a {
+    width: 111px;
+    height: 37px;
+    font-size: 14px;
+    padding: 10px;
+    margin: 0;
+  }
+
+    /*-----------------------POST---------------------*/
+    #post-a {
+      width: 97vw;
+      padding: 20px;
+    }
+    #post-a .img-container {
+      width: 100vw;
+      height: auto;
+  }
+  #post-b p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+    /*-----------------------CONSTITUTION---------------------*/
+  #con {
+    padding: 30px 20px;
+  }
+  
+  #con p {
+    font-size: 14;
+    line-height: 32px;
+  }
+
+
+  /*------EXECUTIVES------*/
+  #exe {
+    padding: 30px 20px;
+    gap: 30px;
+  }
+  #exe .staffs .flex {
+    padding: 0px 0px;
+    gap: 10px;
+    width: 100vw;
+  }
+  #exe .staffs h2 {
+    font-size: 20px;
+  }
+  #exe .staffs .flex .flex-container .content .context svg {
+    width: 24px;
+    height: 24px;
+  }
+  #exe .staffs .flex .flex-container .content .context .sub-title {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  #exe .staffs .flex .flex-container .content .context .body-text {
+    font-size: 16px;
+  }
+
+  #exe .studets h2 {
+    font-size: 20px;
+  }
+
+  #exe .students .flex .flex-container .content .context .sub-title {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  #exe .students .flex .flex-container .content .context .body-text {
+    font-size: 20px;
+  }
+  #exe .students .flex .flex-container .content .context svg {
+    width: 24px;
+    height: 24px;
+  }
+    /*-----------------------EXCO----------------------*/
+  #exco-a {
+    padding: 20px;
+  }
+  #exco-b {
+    padding: 30px 20px;
+  }
+  #exco-b p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 50px;
+  }
+
+  /*-----------------------FOOTER----------------------*/
+  #footer .footer-grid {
+    gap: 30px;
+  }
+  #footer .footer-grid .footer-grid1 .footer-grid1-title {
+    gap: 2px;
+  }
+  #footer .footer-grid .footer-grid1 .footer-grid1-title .footericon .img {
+    width: 32px;
+    height: 32px;
+  }
+  #footer .footer-grid .footer-grid1 .footer-grid1-title .footericon .img img {
+    width: 30px;
+    height: 28px;
+  }
+  #footer .footer-grid .footer-grid1 .footer-grid1-title h3 {
+    font-size: 14px;
+    line-height: 16px;
+    width: 150px;
+    height: 32px;
+    margin-bottom: 0;
+  }
+  #footer .footer-grid .footer-grid1 .footer-grid1-title .svg {
+    margin: 0 1px;
+    margin-right: 2px;
+  }
+  #footer .footer-grid .footer-grid1 .footer-grid1-title .body-text {
+    font-size: 14px;
+    line-height: 16px;
+    width: 67px;
+    height: 32px;
+  }
+  #footer .footer-grid .footer-grid1 .body-text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  #footer .footer-grid .footer-grid2 h3 {
+    font-size: 16px;
+    line-height: normal;
+  }
+  #footer .footer-grid .footer-grid2 ul li span {
+    font-size: 14px;
+  }
+  #footer .footer-grid .footer-grid2 ul {
+    gap: -24px;
+  }
+  #footer .footer-grid .footer-grid2 ul li .svg {
+    width: 12px;
+    height: 12px;
+  }
+  #footer .footer-grid .footer-grid3 {
+    grid: 5px;
+  }
+  #footer .footer-grid .footer-grid3 .footer-grid3-context h3 {
+    font-size: 14px;
+    line-height: normal;
+  }
+  #footer .footer-grid .footer-grid3 .footer-grid3-context p {
+    font-size: 14px;
+    line-height: normal;
+  }
+  #footer .footer-grid .footer-grid3 .footer-grid3-context {
+    gap: 6px;
+  }
+  #footer .footer-grid .footer-grid3 form .form input[type=text],
+  #footer .footer-grid .footer-grid3 form .form textarea {
+    padding:8px 0px 8px 10px;
+  }
+  #footer .footer-grid .footer-grid3 .links a .svg {
+    width: 24px;
+    height: 24px;
+  }
+  
 }
 
 @media (max-width: 600px)
@@ -657,7 +956,7 @@
     font-size: 22px;
     line-height: 20px;
   }
-
+ 
 
   /*-----------EVE-BLOG-----------*/
   #eve-blog {
@@ -677,21 +976,7 @@
     gap: 16px;
     margin-top: -2rem;
   }
-  #eve-blog .eve-blog-a .container .content .context h3 {
-    font-size: 16px;
-    line-height: 20px;
-  }
-
-  #eve-blog .eve-blog-a .container .content .context p {
-    font-size: 14px;
-    line-height: 20px;
-  }
-  #eve-blog .eve-blog-b h2 {
-    font-size: 20px;
-  }
-  #eve-blog .eve-blog-b .container .content .context h3 {
-    font-size: 16px;
-  }
+  
 
   /*-------------CONTACT---------------*/
   #contact {
@@ -713,20 +998,6 @@
   }
   #share {
     padding: 20px;
-  }
-
-  /*-------------EXCO---------------*/
-  #exco-a {
-    padding: 20px;
-  }
-  #exco-a .img {
-    height:450px;
-  }
-  #exco-b {
-    padding: 20px;
-  }
-  #exco-b p {
-    margin-bottom: 55px;
   }
 
   /*-------CONSTITUTION-----------*/

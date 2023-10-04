@@ -9,6 +9,10 @@
     --overlay-color: rgba(6, 40, 51, 0.8);
     --menu-speed: 0.75s;
   }
+
+  .collapse {
+    display: none;
+  }
   
   * {
     padding: 0;
@@ -200,7 +204,9 @@ body .header .download{
     font-weight: 400;
     line-height: normal;
 }
-
+#main-nav ul li svg {
+    display: none;
+}
  
  .navbar.top {background: transparent !important;}
  
@@ -476,7 +482,7 @@ line-height: normal;
 }
 
 
-/*-------HOME C -------*/
+/*-------HOME C --------------------------------------------------------------------------------*/
 #home-c {
     display: flex;
 padding: 78px 120px;
@@ -699,7 +705,7 @@ line-height: 24px; /* 120% */
 align-self: stretch;
 }
 
-/*---------HOME E--------*/
+/*---------HOME E----------------------------------------------*/
 #home-e {
     display: flex;
 padding: 98px 181px;
@@ -760,7 +766,7 @@ color: #fff ;
 
 
 
-/*------------HOME-F*----------*/
+/*------------HOME-F*-----------------------------------------------------------*/
 
 
 #home-f {    
@@ -1008,16 +1014,22 @@ background: #03045E;
     align-self: stretch;
 }
 
-#about .about-container .banner {
+#about .about-container .hide {
+    display: block;
+}
+#about .about-container .collapse {
+    display: none;
+}
+
+#about .about-container img {
     display: flex;
-    padding: 67px 30px;
+    padding: 12px 0px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
     align-self: stretch;
     border-radius: 10px;
-    background: url(../img/banner.png), lightgray 50% / cover no-repeat, #EDF5FF;
 }
 
 
@@ -1034,6 +1046,7 @@ background: #03045E;
 
 #about .about-container .content {
     background-color: var(--light-color);
+    width: 100%;
 }
 
 #about .about-container .content h3 {
@@ -1044,8 +1057,10 @@ background: #03045E;
     font-weight: 500;
     line-height: 32px; /* 100% */
 }
-
-#about .about-container .content p {
+#about .about-container .content ul {
+    width: 100%;
+}
+#about .about-container .content ul li {
     color: #4A4A4A;
     font-family: Lato;
     font-size: 20px;
@@ -1092,18 +1107,22 @@ background: #03045E;
     flex-wrap: wrap;
 }
 
+#eve-blog .eve-blog-a .container .img-container {
+    width: 562px;
+}
+
 #eve-blog .eve-blog-a .container .img {
     border-radius: 10px;
-    background: lightgray 0px -136.121px / 100% 162% no-repeat;
+    background: lightgray;
+    width: 100%;
 }
 
 #eve-blog .eve-blog-a .container .content {
     display: flex;
-    min-width: 400px;
     max-width: 562px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 50px;
+    gap: 40px;
     flex: 1 0 0;
 }
 
@@ -1111,7 +1130,7 @@ background: #03045E;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
+    gap: 10px;
     align-self: stretch;
 }
 
@@ -1130,7 +1149,14 @@ background: #03045E;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 32px; /* 160% */
+    line-height:32px; /* 160% */
+    margin-bottom: -10px;
+}
+
+#eve-blog .eve-blog-a .container .content .context svg {
+    width: 68px;
+    height: 68px;
+    margin-top: 5px;
 }
 
 #eve-blog .eve-blog-b {
@@ -1171,7 +1197,7 @@ background: #03045E;
 
 #eve-blog .eve-blog-b .container .content .img {
     border-radius: 10px 10px 0px 0px;
-    background:lightgray 0px -56.389px / 100% 133.704% no-repeat;
+    background:lightgray;
     overflow: hidden;
 }
 
@@ -1191,6 +1217,20 @@ background: #03045E;
     font-style: normal;
     font-weight: 400;
     line-height: 40px; /* 125% */
+}
+#eve-blog .eve-blog-b .container .content .context p {
+    color: #4A4A4A;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height:32px; /* 160% */
+    margin-bottom: -20px;
+}
+
+#eve-blog .eve-blog-b .container .content .context svg {
+    width: 68px;
+    height: 68px;
 }
 
 
@@ -1345,24 +1385,22 @@ gap: 10px;
 width: 48px;
 height: 44.498px;
 flex-shrink: 0;
-background: url(../img/icon2.png), #fff 50% / cover no-repeat;
+background: #fff;
+border-radius: 2px;
 }
 
-#footer .footer-grid .footer-grid1 .footer-grid1-title h1 {
+#footer .footer-grid .footer-grid1 .footer-grid1-title h3 {
 color: #FFF;
 font-family: Lato;
 font-size: 20px;
 font-style: normal;
 font-weight: 600;
 line-height: 20px; /* 100% */
+width: 200px;
 }   
 
-#footer .footer-grid .footer-grid1 .footer-grid1-title .stroke {
-    width: 0px;
+#footer .footer-grid .footer-grid1 .footer-grid1-title .svg {
     height: 48px;
-    flex-shrink: 0;  
-    stroke-width: 1px;
-    stroke: #FFF;
 }
 
 #footer .footer-grid .footer-grid1 .footer-grid1-title p {
@@ -1449,14 +1487,14 @@ line-height: 20px; /* 100% */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 26px;
+    gap: 6px;
     align-self: stretch;   
 }
 
 #footer .footer-grid .footer-grid3 .footer-grid3-context h3 {
     color: #FFF;
     font-family: Lato;
-    font-size: 20px;
+    font-size: 26px;
     font-style: normal;
     font-weight: 400;
     line-height: 32px; /* 123.077% */   
@@ -1482,6 +1520,7 @@ line-height: 20px; /* 100% */
     align-items: flex-start;
     gap: 10px;
     align-self: stretch;
+    height: 48px;
 }
 
 #footer .footer-grid .footer-grid3 form .form input[type=text],
@@ -1492,7 +1531,7 @@ line-height: 20px; /* 100% */
     gap: 10px;
     align-self: stretch;
     background-color: var(--primary-color);
-    border-radius: 5px;
+    border-radius: 5px 0px 0px 5px;
     border: 1px solid #FFF;
 }
 
@@ -1501,7 +1540,7 @@ line-height: 20px; /* 100% */
     outline: var(--secondary-color); 
     border: 1px solid var(--secondary-color);}
 
-#footer .footer-grid .footer-grid3 form a {
+#footer .footer-grid .footer-grid3 form a .svg{
         right: 0px;
         width: 48px;
         height: 48px;
@@ -1516,7 +1555,11 @@ line-height: 20px; /* 100% */
 }
 
 #footer .footer-grid .footer-grid3 .links a {
-    width: 36px;
-    height: 36px;
+    
     fill: #FFF;
+}
+
+#footer .footer-grid .footer-grid3 .links a .svg {
+    width: 36px;
+    height: 37px;
 }
