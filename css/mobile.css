@@ -1,13 +1,38 @@
 /* CSS FOR MOBILE PHONES */
+@media (max-width: 1140px) {
+  #main-nav {
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: auto;
+    padding: 1px 80px;
+  }
 
+
+  #main-nav ul li .contact {
+    padding: 10px;
+  }
+
+}
+
+@media (max-width: 1052px) {
+  #main-nav ul li a {
+    padding: 0.2rem;
+    margin: 0 0.5rem; 
+}
+}
 
 @media (max-width: 1024px)
 {
-  .hide {
-    display: none;
-  }
   
-
+  
+  #main-nav {
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: auto;
+    padding: 1px 50px;
+  }
   
   body .header {
     padding: 110px 20px 30px 20px;
@@ -67,8 +92,16 @@
 }
 
 
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 @media (max-width: 768px)
 {
+
+  .hide {
+    display: none;
+  }
+
+
   /*--------RESOURCES------*/
   .menu-wrap .menu > div > div > ul > li .collapse {
     display:inline;
@@ -315,7 +348,7 @@
     width: 100%;
   }
 
-/*----------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------*/
 
 
      /*---------HOME A--------*/
@@ -742,6 +775,7 @@
    
    #login {
     padding: 120px 20px;
+   }
 
 
 /*---------------SIGN IN-----------*/
@@ -852,6 +886,7 @@
   #contact {
     padding: 30px 20px;
   }
+
   
   #contact .contact-a .info .flex {
     min-width: 100%;
@@ -877,7 +912,7 @@
     gap: 5px;
   }
   #contact .contact-b h2 {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     margin-bottom: 0;
     margin-top: 12px;
@@ -885,7 +920,7 @@
 
   #contact .contact-b form a {
     display: flex;
-    padding: 15px 40px;
+    padding: 15px 50px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -1236,5 +1271,4 @@
     #footer .footer-grid .footer-grid3 form .form textarea {
     padding: 8px 0px 8px 10px;
     }
-}
 }
