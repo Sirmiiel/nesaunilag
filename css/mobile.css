@@ -1034,6 +1034,9 @@
     padding: 20px;
   }
 
+  #home-b {
+    height: 100vh;
+  }
 
   /*-----Home c------*/
   #home-c {
@@ -1299,9 +1302,14 @@
     font-size: 10px;
     line-height: 13px;
   }
+
+  #main-nav .navbar-content svg {
+    margin-right: 2px;
+  }
+
   #main-nav .navbar-content p {
     width: 50px;
-    font-size: 9px;
+    font-size: 10px;
     line-height: 10px;
   }
     /*-----HEADER------*/
@@ -1315,7 +1323,7 @@
 
   /*--------home-B-----------*/
   #home-b {
-    padding: 5%;
+    padding: 200px 5%;
   }
     #home-b .home-b-flex  {
       justify-content: center;
