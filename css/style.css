@@ -138,6 +138,7 @@ body .header .download{
         width: 186px;
         flex-shrink: 0;
         margin-top: 5px;
+        background-color: red;
     }   
     
     #main-nav .navbar-content p {
@@ -309,33 +310,33 @@ line-height: normal;
 /*--------HOME A--------------*/
 #home-a {
     display: flex;
-padding: 100px 121px;
-flex-direction: column;
-align-items: flex-start;
-gap: 10px;
-align-self: stretch;
+    padding: 100px 121px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
 }
 
 #home-a .mvogrid {
     display: flex;
-align-items: flex-start;
-align-content: flex-start;
-gap: 20px;
-align-self: stretch;
-flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 20px;
+    align-self: stretch;
+    flex-wrap: wrap;
 }
 
 #home-a .mvogrid .mvo {
     display: flex;
-min-width: 300px;
-padding: 36px 48px;
-flex-direction: column;
-align-items: flex-start;
-gap: 10px;
-flex: 1 0 0;
-border-radius: 10px;
-background: #FFF;
-box-shadow: 5px 5px 20px 2px rgba(0, 0, 0, 0.10);
+    min-width: 300px;
+    padding: 36px 48px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1 0 0;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 5px 5px 20px 2px rgba(0, 0, 0, 0.10);
 }
 
 #home-a .mvogrid .mvo .mvocontent {
@@ -397,32 +398,31 @@ line-height: 24px;
 /*------HOME B------*/
 #home-b {
     display: flex;
-padding: 152px 120px;
-justify-content: center;
-align-items: center;
-gap: 10px;
-align-self: stretch;
-background: #03045E;
-color: #fff;
+    padding: 152px 120px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    background: #03045E;
+    color: #fff;
 }
 
 #home-b .home-b-flex {
     display: flex;
-justify-content: space-between;
-align-items: center;
-align-content: center;
-row-gap: 48px;
-flex: 1 0 0;
-flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    row-gap: 48px;
+    flex-wrap: wrap;
 }
 
 #home-b .home-b-flex .content {
     display: flex;
-width: 264px;
-min-width: 264px;
-justify-content: center;
-align-items: center;
-gap: 20px;
+    width: 264px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
 }
 
 #home-b .home-b-flex .content .svg1 {
@@ -464,9 +464,9 @@ background:  var(--primary-color) 50% / cover no-repeat;
 
 #home-b .home-b-flex .content .context {
     display: flex;
-flex-direction: column;
-align-items: flex-start;
-flex: 1 0 0;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
 }
 
 #home-b .home-b-flex .content .context h3 {
@@ -491,12 +491,13 @@ line-height: normal;
 /*-------HOME C --------------------------------------------------------------------------------*/
 #home-c {
     display: flex;
-padding: 78px 120px;
-flex-direction: column;
-align-items: flex-start;
-gap: 10px;
-align-self: stretch;
-background: #FBFDFF;
+    width: 100vw;
+    padding: 78px 120px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    background: #FBFDFF;
 }
 
 #home-c .frame {
@@ -540,16 +541,16 @@ background: #EDF5FF;
 
 #home-c .frame .exe-grid .content .div {
     display: flex;
-flex-direction: column;
-align-items: center;
-gap: 22px;
-flex: 1 0 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    flex: 1 0 0;
+    background-color: red;
+    width: 100%;
 }
 
 #home-c .frame .exe-grid .content .div .imgdiv {
     display: flex;
-width: 386px;
-height: 386px;
 flex-direction: column;
 align-items: flex-start;
 background: #fff;
@@ -633,10 +634,10 @@ stroke: #FFF;
 
 #home-d .wse {
     display: flex;
-flex-direction: column;
-align-items: center;
-gap: 40px;
-align-self: stretch;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
 }
 
 #home-d .wse h2 {
@@ -652,10 +653,10 @@ align-self: stretch;
 
 #home-d .wse .wse-grid {
     display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 20px;
-align-self: stretch;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
 }
 
 #home-d .wse .wse-grid .wse-grid-flex {
@@ -669,14 +670,14 @@ flex-wrap: wrap;
 
 #home-d .wse .wse-grid .wse-grid-flex .wse-grid-container {
     display: flex;
-min-width: 300px;
-padding: 36px 48px;
-align-items: flex-start;
-gap: 10px;
-flex: 1 0 0;
-border-radius: 10px;
-background: #FFF;
-box-shadow: 5px 5px 20px 2px rgba(0, 0, 0, 0.10);
+    min-width: 300px;
+    padding: 36px 48px;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1 0 0;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 5px 5px 20px 2px rgba(0, 0, 0, 0.10);
 }
 
 #home-d .wse .wse-grid .wse-grid-flex .wse-grid-container .wse-grid-content {
@@ -724,12 +725,12 @@ align-self: stretch;
 /*---------HOME E----------------------------------------------*/
 #home-e {
     display: flex;
-padding: 98px 181px;
-flex-direction: column;
-align-items: flex-start;
-gap: 10px;
-align-self: stretch;
-background: var(--light-color);
+    padding: 98px 181px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    background: var(--light-color);
 }
 
 #home-e .content {
@@ -741,11 +742,11 @@ align-self: stretch;
 
 #home-e .content .context {
     display: flex;
-flex-direction: column;
-align-items: center;
-gap: 25px;
-align-self: stretch;
-height: 70%;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    align-self: stretch;
+    height: 70%;
 }
 
 #home-e .content .context h2 {
@@ -816,12 +817,12 @@ align-self: stretch;
 
 #home-f .u-e .u-e-grid {
     display: flex;
-justify-content: center;
-align-items: center;
-align-content: center;
-gap: 77px;
-align-self: stretch;
-flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 77px;
+    align-self: stretch;
+    flex-wrap: wrap;
 }
 
 #home-f .u-e .u-e-grid .img {
@@ -1370,7 +1371,7 @@ background: #03045E;
 #contact .contact-b form .form textarea {outline-color: #4a4a4a;width: 100%; display: inline-block; border: none; background-color: #f5f5f5; padding: 2rem;}
 #contact .contact-b form .form input[type=text]:focus {background-color: var(--medium-color); outline: var(--secondary-color); border: 1px solid var(--secondary-color);}
 #contact .contact-b form .form textarea {height: 250px;}
-#contact .contact-b form a {width: 15%; color: #fff;}
+#contact .contact-b form button {width: 15%; color: #fff;}
 
 
 /*----------FOOTER------------*/
@@ -1516,7 +1517,7 @@ width: 200px;
 #footer .footer-grid .footer-grid3 {
     background-color: var(--primary-color);
     display: flex;
-    min-width: 260px;
+    min-width: 160px;
     flex-direction: column;
     gap: 13px;
     flex: 1 0 0;

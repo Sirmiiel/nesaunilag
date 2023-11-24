@@ -364,36 +364,34 @@
 
 
   /*---------HOME B--------*/
-  #home-b {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    height: 70vh;
-  }
-
-  #home-b .home-b-flex .content {
-    display: flex;
-    width: 164px;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-   }
-  #home-b .home-b-flex .content .svg1,
-  #home-b .home-b-flex .content .svg2,
-  #home-b .home-b-flex .content .svg3,
-  #home-b .home-b-flex .content .svg4 {
-    width: 48px;
-    height: 48px;
-  }
-  #home-b .home-b-flex .content .context h3{
-    font-size: 28px;
-    margin-bottom: 0;
-  }
-  #home-b .home-b-flex .content .context p {
-    font-size: 20px;
-    margin-bottom: 0;
-  }
+    #home-b {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      height: 70vh;
+    }
+    #home-b .home-b-flex .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+    }
+    #home-b .home-b-flex .content .svg1,
+    #home-b .home-b-flex .content .svg2,
+    #home-b .home-b-flex .content .svg3,
+    #home-b .home-b-flex .content .svg4 {
+      width: 48px;
+      height: 48px;
+    }
+    #home-b .home-b-flex .content .context h3{
+      font-size: 28px;
+      margin-bottom: 0;
+    }
+    #home-b .home-b-flex .content .context p {
+      font-size: 20px;
+      margin-bottom: 0;
+    }
 
   
   /*---------HOME C--------*/
@@ -918,7 +916,7 @@
     margin-top: 12px;
   }
 
-  #contact .contact-b form a {
+  #contact .contact-b form button {
     display: flex;
     padding: 15px 50px;
     justify-content: center;
@@ -1049,6 +1047,7 @@
   #home-c .frame .exe-grid .content {
     padding-bottom: 15px;
   }
+
 
 
 
@@ -1233,17 +1232,7 @@
    
 }
 
-@media (max-width: 450px) {
-  /*-----HEADER CLASS-----*/
-  .header {
-    width: 100vw;
-  }
-  /*-----------EVE-BLOG-----------*/
-  #eve-blog {
-    padding: 30px 20px;
-  }
-}
-@media (max-height: 500px)
+@media (max-width: 500px)
 {
   /*-----HEADER------*/
   #header {
@@ -1253,22 +1242,112 @@
   /*-----FOOTER-----*/
   #footer .footer-grid .footer-grid3 form .form input[type=text],
   #footer .footer-grid .footer-grid3 form .form textarea {
-  padding: 8px 0px 8px 10px;
+  padding: 2px 0px 2px 5px;
+  width: 200px;
 }
 }
 
 
-@media (max-height: 320px)
+@media (max-width: 450px) {
+  /*-----HEADER CLASS-----*/
+  .header {
+    width: 100vw;
+  }
+
+  /*--------home-b-----------*/
+  #home-b {
+    padding: 5%;
+  }
+    #home-b .home-b-flex  {
+      justify-content: center;
+
+    }
+
+
+  /*-----------EVE-BLOG-----------*/
+  #eve-blog {
+    padding: 30px 20px;
+  }
+}
+
+
+@media (max-width: 400px) {
+
+
+  #home-c {
+    padding: auto 2%;
+  }
+  #home-c .frame .exe-grid .content .div .imgdiv {
+    width: 100%;
+  }
+
+}
+
+
+@media (max-width: 350px)
 {
-  
+  #main-nav {
+    padding: 1px 2%;
+  }
+
+  #main-nav .navbar-content {
+    width: 75%;
+    gap: 1px;
+  }
+  #main-nav .navbar-content h1 {
+    width: 100px;
+    font-size: 10px;
+    line-height: 13px;
+  }
+  #main-nav .navbar-content p {
+    width: 50px;
+    font-size: 9px;
+    line-height: 10px;
+  }
     /*-----HEADER------*/
     #header {
       padding: 180px 22px;
     }
 
+  #home-a .mvogrid .mvo {
+    min-width: 150px;
+  }
+
+  /*--------home-B-----------*/
+  #home-b {
+    padding: 5%;
+  }
+    #home-b .home-b-flex  {
+      justify-content: center;
+
+    }
+
+  /*----------HOME-D------------*/
+  #home-d .wse .wse-grid .wse-grid-flex .wse-grid-container {
+    min-width: 150px;
+    padding: 2%;
+  }
+
+  /*----------HOME-F------------*/
+  #home-f .u-e .u-e-grid .content {
+    min-width: 150px;
+  }
+
+  #eve-blog .eve-blog-b .container .content {
+    min-width: 250px;
+  }
+
+    
 /*-----FOOTER-----*/
+  #footer .footer-grid .footer-grid1 .footer-grid1-title {
+    width: 250px;
+  }
+    #footer .footer-grid .footer-grid1 .footer-grid1-title h3 {
+      font-size: 12px;
+    }
     #footer .footer-grid .footer-grid3 form .form input[type=text],
     #footer .footer-grid .footer-grid3 form .form textarea {
     padding: 8px 0px 8px 10px;
+    width: 200px;
     }
 }
