@@ -63,6 +63,7 @@
     font-family: "Montserrat", sans-serif;
     color: var(--dark-color);
     line-height: 1.6;
+    overflow-x: hidden;
   }
 
 
@@ -544,7 +545,6 @@ background: #EDF5FF;
     align-items: center;
     gap: 22px;
     flex: 1 0 0;
-    background-color: red;
     width: 100%;
 }
 
