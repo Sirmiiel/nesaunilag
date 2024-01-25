@@ -317,373 +317,160 @@
 }
 
 
-/*--------------------------LOG IN PAGE-----------------------------------*/
-#login {
+/*------------GALLERY-------------*/
+#gal {
     display: flex;
-    height: 100vh;
-    padding: 387px 125px;
+    padding: 60px 117px 60px 120px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
-    flex-shrink: 0;
-    background: #03045E;
-}
-#login .login-a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 60px;
     align-self: stretch;
 }
-#login .login-a .login-a-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-    align-self: stretch; 
-}
-#login .login-a .login-a-content h2 {
-    color: #FFF;
-    text-align: center;
-    font-family: Lato;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
-#login .login-a .login-a-content p {
-    color: #FFF;
-    text-align: center;
-    font-family: Lato;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px; /* 120% */
-}
-#login .login-a a {
-    display: flex;
-    padding: 18px 50px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 10px 0px;
-    border: 1px solid #FFF;
-    color: #EDF5FF;
-}
 
-#login .login-a a:hover {
-    color: #03045E;
-    background-color: #FFF;
-}
-
-/*--------------------------SIGN IN PAGE-----------------------------------*/
-#signin {
+#gal .content {
     display: flex;
-    padding: 200px 161px;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    flex: 1 0 0;
-    background: #EDF5FF;
-}
-#signin .signin-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 76px;
-}
-#signin .signin-form p {
-    color: #03045E;
-    text-align: center;
-    font-family: Lato;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
-#signin .signin-form div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 65px;
-    align-self: stretch;
-}
-#signin .signin-form div form {
-    display: flex;
-    width: 510px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 32px;
+    gap: 24px;
+    align-self: stretch;
 }
-#signin .signin-form div form .field {
+
+#gal .content h3 {
+    color: #000;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: -10px;
+}
+
+#gal .content .grid-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    width: 100%;
     position: relative;
 }
-#signin .signin-form div form .field svg {
-    position: absolute;
-    left: 0;
-    top: 0px;
-    margin: 25px 18px;
-}
-#signin .signin-form div form .field input[type=email],
-#signin .signin-form div form .field input[type=password] {
-    display: flex;
-    padding: 20px 120px 20px 50px;
-    align-items: center;
-    gap: 20px;
-    align-self: stretch;
-    border-radius: 10px;
-    background: #FFF;
-    box-shadow: 4px 4px 30px 0px rgba(0, 0, 0, 0.10);
-    border:none;
-}
 
-#signin .signin-form div form input[type=email]:focus, 
-#signin .signin-form div form input[type=password]:focus {
-    background-color: white; 
-    outline: #03045E; 
-    border: 3px solid #03045E;
-}
-#signin .signin-form div a {
-    color: #000;
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-
-#signin .signin-form .a {
-    display: flex;
-    padding: 18px 50px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 10px 0px;
-    background: #03045E;
-    color: #FFF;
-    font-family: Inter;
-    font-size: 20px;
-    font-weight: 400;
-}
-
-/*--------------------ADIM PAGE---------------*/
-#admin {
-    display: flex;
-    padding: 276px 465px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    background: #EDF5FF;
-}
-#admin .container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 120px;
-    align-self: stretch;
-}
-#admin .container .content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 32px;
-    align-self: stretch;
-}
-
-#admin .container .content a {
-    display: flex;
-    padding: 20px 184px;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    align-self: stretch;
-    border-radius: 10px;
-    background: #FFF;
-    box-shadow: 4px 4px 30px 0px rgba(0, 0, 0, 0.10);
-    color: #000;
-    text-align: center;
-    font-family: Lato;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-#admin .container .content a:hover {
-    background-color: #03045E;
-    color: #FFF;
-}
-
-#admin .container .log-out {
-    display: flex;
-    padding: 20px 184px;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    align-self: stretch;
-    border-radius: 10px;
-    border: 1px solid #03045E;
-    color: #03045E;
-    text-align: center;
-    font-family: Lato;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-#admin .container .log-out:hover {
- background-color: #FFF;
- border: 1px solid #fff;
-}
-
-
-
-
-
-/*--------------------UPLOAD---------------*/ 
-#upload {
-    display: flex;
-    padding: 146px 120px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-}
-#upload .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    gap: 84px;
-    align-self: stretch;
-}
-
-#upload .container h2 {
-    color: #000;
-    text-align: center;
-    font-family: Lato;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-#upload .container .content {
+#gal .content .grid-container .grid {
     display: flex;
     align-items: flex-start;
     align-content: flex-start;
-    gap: 50px;
+    gap: 20px;
     align-self: stretch;
     flex-wrap: wrap;
 }
 
-#drop-area {
+#gal .content .grid-container .grid .grid-content {
     display: flex;
-    padding: 30px;
-    width: 590px;
-    height: 590px;
-    text-align: center;
-    justify-content: center;
+    height: 213px;
+    justify-content: flex-end;
     align-items: center;
-    align-content: center;
-    border: 2px dashed #4a4a4a;
+    border: 2px solid #000;
+    background: #E8E8E8;
 }
 
-#img-view {
+#gal .content .grid-container .grid .grid-content img {
+    width: 300px;
+    height: 213px;
+}
+
+#gal .content .grid-container .arrow {
     display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    width: 103%;
+    justify-content: space-between;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+#gal .content .grid-container .arrow .prev,  
+#gal .content .grid-container .arrow .next {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    fill: #FFF;
+    stroke-width: 1px;
+    stroke: #000;
+}
+
+#gal .content .grid-container .grid .grid-content {
+    display: none; /* Hide all grid content by default */
+  }
+
+  #gal .content .grid-container .grid .grid-content.active {
+    display: block; /* Display only the active slide */
+  }
+
+  /* Styles for arrow buttons (you can customize further) */
+  #gal .content .grid-container .arrow .prev,
+  #gal .content .grid-container .arrow .next {
+    cursor: pointer;
+    font-size: 24px;
+    margin: 0 10px;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 20;
     width: 100%;
     height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .modal-content {
     margin: auto;
-    background-position: center;
-    background-size: cover;
-}
-#img-view div {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-
-#upload .container form {
-    display: flex;
-    align-items: flex-start;
-    align-content: flex-start;
-    gap: 50px;
-    align-self: stretch;
-    flex-wrap: wrap;
-}
-#upload .container form .context {
- display: flex;
- flex-direction: column;
- gap: 30px;
-}
-
-#upload .container form input[type=text], 
-#upload .container form textarea {
-    display: flex;
-    width: auto;
-    padding: 20px 140px 20px 10px;
-    align-items: center;
-    gap: 20px;
-    align-self: stretch;
-    border-radius: 10px;
-    background: #FafaFa;
-    border:none;
-}
-
-#upload .container form textarea {
-    height: 200px;
-    padding: 20px 10px 20px 10px;
-    width: 400px;
-}
-
-#upload .containerS form input[type=text]:focus
-#upload .container form textarea:focus {
-    background-color: white; 
-    outline: #03045E; 
-    border: 3px solid #03045E;
-}
-
-.button {
-    display: flex;
-    align-items: flex-start;
-    gap: 14px;
-}
-
-.button input[type=submit] {
-    display: flex;
-    padding: 12px 50px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 10px 0px;
-    background: #03045E;
+    display: block;
+    margin-top: 30px;
+    max-width: 95%;
+    max-height: 90%;
+  }
+  
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
     color: #FFF;
-    text-align: center;
-    font-family: Lato;
-    font-size: 24px;
-    font-weight: 400;
-}
+    cursor: pointer;
+    background-color: white;
+    z-index: 11;
+  }
 
-.button input[type=reset] {
-    display: flex;
-    padding: 12px 50px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 10px 0px;
-    background: #ffff;
-    color: #4a4a4a;
-    text-align: center;
-    font-family: Lato;
-    font-size: 24px;
-    font-weight: 400;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

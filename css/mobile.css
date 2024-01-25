@@ -432,6 +432,44 @@
   }
 
 
+/*------GALLERY----------*/
+#gallery {
+  display: flex;
+  padding: 91.5px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  height: 70vh;
+  overflow: hidden;
+}
+
+#gallery.img{
+  width: 394px;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), lightgray -439.257px -375.496px / 324.324% 214.714% no-repeat;
+}
+
+#gallery .img .content {
+  padding: 10px;
+}
+
+#gallery .img .content .context {
+  padding: 3px;
+  width: 90%;
+}
+
+#gallery .img .content .context h2 {
+  font-size: 36px;
+}
+
+#gallery .img .content .context p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+
+
 /*---------HOME D--------*/
   #home-d {
     padding: 48px 20px;
@@ -769,116 +807,7 @@
   }
 
 
-   /*-----------------------LOGIN----------------------*/
-   
-   #login {
-    padding: 120px 20px;
-   }
 
-
-/*---------------SIGN IN-----------*/
-#welcome {
-  display: flex;
-  padding: 90px 55px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  align-self: stretch;
-  background: #03045E;
- }
- #welcome p {
-  font-size: 32px;
-  color: #FBFDFF;
- }
-
- #signin .signin-form p {
-  font-size: 32px;
-}
-
-  #signin {
-    display: flex;
-    padding: 20px 60px;
-    flex-direction: column;
-    align-items: center;
-    gap: 64px;
-    align-self: stretch;
-  }
-  #signin .signin-form {
-    gap: 20px;
-  }
-  #signin .signin-form div form {
-    width: 90vw;
-}
-
-
-
-
-
-
-
-
-   /*-----------------------ADMIN------*/
-   #admin {
-    display: flex;
-    height: 844px;
-    padding: 230px 0px;
-    align-items: flex-start;
-    gap: 10px;
-   }
-  #admin .container  {
-      display: flex;
-      padding: 0px 20px;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 84px;
-      flex: 1 0 0;
-      align-self: stretch;
-  }
-  #admin .container .content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
-    align-self: stretch;
-  }
-   #admin .container .content a {
-    padding: 20px 80px;
-   }
-   #admin .container .log-out {
-    padding: 20px 80px;
-   }
-
-
-
-/*--------------------UPLOAD---------------*/
-#upload {
-  padding: 60px 20px;
-}
-#upload .container {
-  gap: 20px;
-}
-#upload .container h2 {
-  font-size: 32px;
-  margin-bottom: 0;
-}
-#drop-area {
-  height: 350px;
-}
-
-#upload .container form {
-  gap: 10px;
-  width: 100%;
-}
-#upload .container form input[type=text], 
-#upload .container form textarea {
-  padding: 20px 20px 20px 20px;
-  gap: 6px;
-  width: 100%;
-}
-.button input[type=submit], .button input[type=reset] {
-  padding: 8px 20px;
-  font-size: 14px;
-}
 
  /*-----------------------CONTACT---------------------------------------------*/
   #contact {
@@ -1129,6 +1058,18 @@
    }
 
 
+
+     /*-----------Gallery-----------*/
+  #gal .content h3 {
+      color: #000;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+  }
+
+
+
   /*-----------ABOUT-----------*/
   #about {
     padding: 30px 20px;
@@ -1232,6 +1173,26 @@
    #footer .footer-grid .footer-grid3 .footer-grid3-context p {
     line-height: normal;
    } 
+
+
+
+   /* GALLERY */
+
+  #gal {
+    padding: 20px;
+  }
+  
+  /* Modal styles for mobile */
+  .modal-content {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .close {
+    top: 5px;
+    right: 5px;
+  }
+
    
 }
 
@@ -1266,11 +1227,45 @@
 
     }
 
+  /*------GALLERY----------*/
+  #gallery {
+    height: 80vh;
+  }
+
+#gallery .img .content .context h2 {
+  font-size: 34px;
+}
+
+#gallery .img .content .context p {
+  font-size: 14px;
+}
+
 
   /*-----------EVE-BLOG-----------*/
   #eve-blog {
     padding: 30px 20px;
   }
+
+  /*-----FOOTER-----*/
+#footer .footer-grid .footer-grid1 {
+  width: 100vw;
+}
+
+#footer .footer-grid .footer-grid2 {
+  width: 100vw;
+}
+
+  #footer .footer-grid .footer-grid1 .footer-grid1-title {
+    width: 250px;
+  }
+    #footer .footer-grid .footer-grid1 .footer-grid1-title h3 {
+      font-size: 12px;
+    }
+    #footer .footer-grid .footer-grid3 form .form input[type=text],
+    #footer .footer-grid .footer-grid3 form .form textarea {
+    padding: 8px 0px 8px 10px;
+    width: 200px;
+    }
 }
 
 
@@ -1283,6 +1278,7 @@
   #home-c .frame .exe-grid .content .div .imgdiv {
     width: 100%;
   }
+
 
 }
 

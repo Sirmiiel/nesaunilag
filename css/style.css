@@ -24,6 +24,11 @@
     text-decoration: none;
   }
 
+  h1, h2, h3, h4, p {
+    font-family: Lato;
+  }
+
+
   h2 {
     color: #000;
     font-family: Lato;
@@ -107,7 +112,9 @@ body .header .download{
     justify-content: space-between;
     align-items: flex-start;
     background: #FFF;
-    box-shadow: 0px 8px 64px 0px rgba(0, 0, 0, 0.10);}
+    box-shadow: 0px 8px 64px 0px rgba(0, 0, 0, 0.10);
+    z-index: 11;
+}
    
     #main-nav .navbar-content {
         display: flex;
@@ -617,6 +624,192 @@ background: #03045E;
 stroke-width: 3px;
 stroke: #FFF;
 }
+
+
+/*-----------GALLERY---------*/
+#gallery {
+    display: flex;
+    width: 100vw;
+    height: 810px;
+    padding: 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #D8D7D7;
+    position: relative;
+}
+
+#gallery .img {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), lightgray 50% / cover no-repeat;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+}
+
+#gallery .img img {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 120%;
+    height: 100%;
+    animation: zoom-out 5s infinite;
+    animation-timing-function: cubic-bezier(0.01,1,0.1,1);
+}
+
+@keyframes zoom-out {
+    100% {
+        width: 100%;
+    }
+}
+
+#gallery .img1 {
+    animation: slide1 20s linear infinite;
+} 
+#gallery .img2 {
+    animation: slide2 20s linear infinite;
+} 
+#gallery .img3{
+    animation: slide3 20s linear infinite;
+} 
+#gallery .img4 {
+    animation: slide4 20s linear infinite;
+}
+
+@keyframes slide1 {
+    0%{
+        visibility: visible;
+    }
+    25% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    75% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+@keyframes slide2 {
+    0%{
+        visibility: hidden;
+    }
+    25% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: visible;
+    }
+    75% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+@keyframes slide3 {
+    0%{
+        visibility: hidden;
+    }
+    25% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    75% {
+        visibility: visible;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+@keyframes slide4 {
+    0%{
+        visibility: hidden;
+    }
+    25% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    75% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+
+#gallery .img .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    animation: textup 20s linear infinite;
+    transform: translateY(100px);
+}
+@keyframes textup {
+    10% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+#gallery .img .content1 {
+    animation-delay: 0s;
+}
+#gallery .img .content2 {
+    animation-delay: 5s;
+}
+#gallery .img .content3 {
+    animation-delay: 10s;
+}
+#gallery .img .content4 {
+    animation-delay: 15s;
+}
+
+
+#gallery .img .content .context {
+    display: flex;
+    width: 869px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+
+#gallery .img .content .context h2 {
+    color: #FFF;
+    text-align: center;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#gallery .img .content .context p {
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+}
+
+
+
+
+
 
 
 
