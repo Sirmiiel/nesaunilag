@@ -53,6 +53,10 @@ const grids = {
   // Initial display for each grid
   showSlides('grid1');
   showSlides('grid2');
+  showSlides('grid3');
+  showSlides('grid4');
+  showSlides('grid5');
+
 
 
   function showSlides(gridId) {
