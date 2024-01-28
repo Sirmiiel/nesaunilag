@@ -1191,8 +1191,14 @@
   }
 
   .close {
-    top: 5px;
-    right: 5px;
+    top: 10%;
+    right: 5%;
+    height: 40px;
+  }
+
+  .close p {
+    font-size: 60px;
+    font-weight:200;
   }
 
    

@@ -386,6 +386,12 @@
     height: 213px;
 }
 
+#gal .content .grid-container .grid .grid-content img:hover {
+    cursor: pointer;
+    -webkit-filter:saturate(10%);
+    filter: saturate(10%);
+}
+
 #gal .content .grid-container .arrow {
     display: flex;
     width: 103%;
@@ -443,14 +449,19 @@
   
   .close {
     position: absolute;
-    top: 20px;
-    right: 20px;
-    color: #FFF;
+    top: 5%;
+    right: 5%;
+    color: #000;
+    height: 70px;
     cursor: pointer;
     background-color: white;
     z-index: 11;
   }
 
+  .close p {
+    font-size: 120px;
+    font-weight:100;
+  }
 
 
 
