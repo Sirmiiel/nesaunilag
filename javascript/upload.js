@@ -2,87 +2,76 @@
 
 // gallery slideshow
 
-const grids = {
-    'grid1': {
-      slides: document.querySelectorAll('#grid1 .grid .grid-content'),
-      currentIndex: 0
-    },
-    'grid2': {
-      slides: document.querySelectorAll('#grid2 .grid .grid-content'),
-      currentIndex: 0
-    },
-    'grid3': {
-        slides: document.querySelectorAll('#grid3 .grid .grid-content'),
-        currentIndex: 0
-      },
-      'grid4': {
-        slides: document.querySelectorAll('#grid4 .grid .grid-content'),
-        currentIndex: 0
-      },
-      'grid5': {
-        slides: document.querySelectorAll('#grid5 .grid .grid-content'),
-        currentIndex: 0
+const initSlider = () => {
+  const imageList = document.querySelector(".slider-wrapper .image-list");
+  const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button");
+  const sliderScrollbar = document.querySelector(".grid-container1 .slider-scrollbar");
+  const scrollbarThumb = sliderScrollbar.querySelector(".scrollbar-thumb");
+  const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
+  
+  // Handle scrollbar thumb drag
+  scrollbarThumb.addEventListener("mousedown", (e) => {
+      const startX = e.clientX;
+      const thumbPosition = scrollbarThumb.offsetLeft;
+      const maxThumbPosition = sliderScrollbar.getBoundingClientRect().width - scrollbarThumb.offsetWidth;
+      
+      // Update thumb position on mouse move
+      const handleMouseMove = (e) => {
+          const deltaX = e.clientX - startX;
+          const newThumbPosition = thumbPosition + deltaX;
+
+          // Ensure the scrollbar thumb stays within bounds
+          const boundedPosition = Math.max(0, Math.min(maxThumbPosition, newThumbPosition));
+          const scrollPosition = (boundedPosition / maxThumbPosition) * maxScrollLeft;
+          
+          scrollbarThumb.style.left = `${boundedPosition}px`;
+          imageList.scrollLeft = scrollPosition;
       }
-  };
-  
-  function showSlides(gridId) {
-    const { slides, currentIndex } = grids[gridId];
-  
-    slides.forEach((slide, index) => {
-      const calculatedIndex = (index + currentIndex) % slides.length;
-      if (index >= currentIndex && index < currentIndex + 4) {
-        slide.classList.add('active');
-      } else {
-        slide.classList.remove('active');
+
+      // Remove event listeners on mouse up
+      const handleMouseUp = () => {
+          document.removeEventListener("mousemove", handleMouseMove);
+          document.removeEventListener("mouseup", handleMouseUp);
       }
-    });
-  }
+
+      // Add event listeners for drag interaction
+      document.addEventListener("mousemove", handleMouseMove);
+      document.addEventListener("mouseup", handleMouseUp);
+  });
+
+  // Slide images according to the slide button clicks
+  slideButtons.forEach(button => {
+      button.addEventListener("click", () => {
+          const direction = button.id === "prev-slide" ? -1 : 1;
+          const scrollAmount = imageList.clientWidth * direction;
+          imageList.scrollBy({ left: scrollAmount, behavior: "smooth" });
+      });
+  });
+
   
-  function nextSlide(gridId) {
-    const { slides, currentIndex } = grids[gridId];
-    grids[gridId].currentIndex = (currentIndex + 1) % slides.length;
-    showSlides(gridId);
+   // Show or hide slide buttons based on scroll position
+  const handleSlideButtons = () => {
+      slideButtons[0].style.display = imageList.scrollLeft <= 0 ? "none" : "flex";
+      slideButtons[1].style.display = imageList.scrollLeft >= maxScrollLeft ? "none" : "flex";
   }
-  
-  function prevSlide(gridId) {
-    const { slides, currentIndex } = grids[gridId];
-    grids[gridId].currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-    showSlides(gridId);
+
+  // Update scrollbar thumb position based on image scroll
+  const updateScrollThumbPosition = () => {
+      const scrollPosition = imageList.scrollLeft;
+      const thumbPosition = (scrollPosition / maxScrollLeft) * (sliderScrollbar.clientWidth - scrollbarThumb.offsetWidth);
+      scrollbarThumb.style.left = `${thumbPosition}px`;
   }
-  
-  // Initial display for each grid
-  showSlides('grid1');
-  showSlides('grid2');
-  showSlides('grid3');
-  showSlides('grid4');
-  showSlides('grid5');
+
+  // Call these two functions when image list scrolls
+  imageList.addEventListener("scroll", () => {
+      updateScrollThumbPosition();
+      handleSlideButtons();
+  });
+}
 
 
-
-  function showSlides(gridId) {
-    const { slides, currentIndex } = grids[gridId];
-    const containerWidth = document.getElementById(gridId).offsetWidth;
-    const imagesPerSlide = calculateImagesPerSlide(containerWidth);
-  
-    slides.forEach((slide, index) => {
-      const calculatedIndex = (index + currentIndex) % slides.length;
-      if (index >= currentIndex && index < currentIndex + imagesPerSlide) {
-        slide.classList.add('active');
-      } else {
-        slide.classList.remove('active');
-      }
-    });
-  }
-  
-  function calculateImagesPerSlide(containerWidth) {
-    // You can adjust these values based on your preference
-    const desktopThreshold = 768; // Adjust this value for desktop screens
-    const mobileThreshold = 480;  // Adjust this value for mobile screens
-    const desktopImages = 4;      // Number of images to show on desktop
-    const mobileImages = 1;       // Number of images to show on mobile
-  
-    return containerWidth >= desktopThreshold ? desktopImages : mobileImages;
-  }
+window.addEventListener("resize", initSlider);
+window.addEventListener("load", initSlider);
 
   function openModal(imagePath) {
     const modal = document.getElementById('imageModal');
@@ -96,7 +85,6 @@ const grids = {
     const modal = document.getElementById('imageModal');
     modal.style.display = 'none';
   }
-  
 
 
 /*
